@@ -11,10 +11,58 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{HOST}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+					"raw": "{{HOST}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
 					"protocol": "http",
 					"host": [
 						"{{HOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://udagram-bunya.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{AWSHOST}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+					"protocol": "http",
+					"host": [
+						"{{AWSHOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://udagram.bunya.eu.org/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CUSTOMHOST}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+					"protocol": "https",
+					"host": [
+						"{{CUSTOMHOST}}"
 					],
 					"path": [
 						"filteredimage"
@@ -57,6 +105,18 @@
 			"id": "1df3d31a-de30-494b-a3d0-f1228dd8713c",
 			"key": "HOST",
 			"value": "localhost:8082",
+			"type": "string"
+		},
+		{
+			"id": "1df3d31a-de30-494b-a3d0-f1228dd8713c",
+			"key": "CUSTOMHOST",
+			"value": "udagram.bunya.eu.org",
+			"type": "string"
+		},
+		{
+			"id": "1df3d31a-de30-494b-a3d0-f1228dd8713c",
+			"key": "AWSHOST",
+			"value": "udagram-bunya.us-east-1.elasticbeanstalk.com",
 			"type": "string"
 		}
 	]
