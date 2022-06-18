@@ -31,11 +31,15 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     if (!req.query.image_url) {
       return res.status(422).send('image_url is required')
     }
-    const imgPath = await filterImageFromURL(`${req.query.image_url}`)
-    res.sendFile(imgPath)
-    res.on('finish', async () => {
-      await deleteLocalFiles([imgPath])
-    })
+    try {
+      const imgPath = await filterImageFromURL(`${req.query.image_url}`)
+      res.sendFile(imgPath)
+      res.on('finish', async () => {
+        await deleteLocalFiles([imgPath])
+      })
+    } catch (error) {
+      return res.status(422).send('image_url is invalid')
+    }
   });
 
   /**************************************************************************** */
