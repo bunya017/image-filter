@@ -1,6 +1,6 @@
 {
   "name": "udacity-c2-image-filter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Node-Express application which runs a simple script to process images",
   "main": "index.js",
   "scripts": {
