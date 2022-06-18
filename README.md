@@ -45,4 +45,5 @@ Prevent requests without valid authentication headers.
 ### Custom Domain Name
 
 Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
-> !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
+- Elasticbean URL: http://udagram-bunya.us-east-1.elasticbeanstalk.com
+- Custom URL: https://udagram.bunya.eu.org
