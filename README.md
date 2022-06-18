@@ -45,5 +45,5 @@ Prevent requests without valid authentication headers.
 ### Custom Domain Name
 
 Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
-- Elasticbean URL: http://udagram-bunya.us-east-1.elasticbeanstalk.com
+- Elastic Beanstalk URL: http://udagram-bunya.us-east-1.elasticbeanstalk.com
 - Custom URL: https://udagram.bunya.eu.org
